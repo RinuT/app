@@ -59,7 +59,7 @@
               <label>Currency</label>
               <input type="text" ng-model="Currency" readonly>
               <label ng-if="totalRecieved!=POQty">Batch ID</label>
-              <span class="wht" ng-if="totalRecieved!=POQty"><input type="text" ng-model="BatchId" ></span>
+              <span class="wht" ><input type="text" ng-model="BatchId" ></span>
             </div>
             
             <div class="col-md-4">
@@ -71,8 +71,8 @@
               <input type="text" ng-model="UOP" readonly>
               <label>Price</label>
               <input type="text" ng-model="price" readonly>
-              <label ng-if="totalRecieved!=POQty">Shipment Date</label>
-              <span class="wht" ng-if="totalRecieved!=POQty"><input type="date" ng-model="ShipmentDate"></span>
+              <label >Shipment Date</label>
+              <span class="wht"><input type="date" ng-model="ShipmentDate"></span>
               
             </div>
             <div class="col-md-4">
@@ -82,8 +82,8 @@
               <span ><input type="text" ng-model="requirment" readonly></span>
               <label>Delivery Date</label>
               <input type="date" ng-model="dateD" readonly>
-              <label ng-if="totalRecieved!=POQty">Shipment Qty</label>
-              <span class="wht" ng-if="totalRecieved!=POQty"><input type="text" ng-model="shipmentQuantity"></span>
+              <label>Shipment Qty</label>
+              <span class="wht" ><input type="text" ng-model="shipmentQuantity"></span>
             </div>
             <div class="clearfix"></div>
           <div class="submit_block"></div>
