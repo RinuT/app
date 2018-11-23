@@ -115,7 +115,7 @@ app.controller('flextronics-purchase-orderCtrl', ['$scope','myservice','$http','
      $scope.proceed=function(){
          //$scope.search=true
          if($scope.requiredQuantity<$scope.shipmentQuantity){
-           alert("shipped Quantity more tyhan required quantity")
+           alert("shipped Quantity more than required quantity")
          }
          else
          $scope.setProceed()
@@ -127,7 +127,7 @@ app.controller('flextronics-purchase-orderCtrl', ['$scope','myservice','$http','
        shipmentDate=$scope.ShipmentDate
       var CreationDate = new Date();
       CreationDate=$scope.dateC
-      if(CreationDate <shipmentDate){
+     
        var request=
                        {
              "$class": "com.cts.ipm.p2pNetwork.ShipmentNotification",
@@ -179,11 +179,7 @@ app.controller('flextronics-purchase-orderCtrl', ['$scope','myservice','$http','
              $scope.sucess=false
              $scope.loading=false
             });
-      }
-      else
-      {
-        alert("Shipment Date should be less than creation date")
-      }
+      
        
       }
       
